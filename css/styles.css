@@ -1,3 +1,58 @@
+*{
+  margin: 0;
+}
+body{
+  font-family: 'Dosis', sans-serif;
+	font-family: 'Lato', sans-serif;
+  font-weight: 400;
+	font-size: 14px;
+  
+}
+
+.btnGeneral{
+  background-color: #bee058;
+  border-color: #808699;
+  cursor: pointer;
+  color: white;
+
+}
+.btnGeneral:hover{
+  background-color: #8abe04;
+  color: white;
+    
+}
+
+/*#region Login*/
+  #loginBody{
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+  }
+  .page-login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px 10px 13px 13px;
+  }
+
+  .btnLogin{
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .form-login{
+    display: block;
+  }
+
+  .page-login h3{
+        font-family: 'Arial';
+        color: #585c69;
+        font-size: xx-large;
+  }
+
+/*#endregion Login*/
 .jumbotron, .card-body, .container, .site-header{
     font-family: 'Raleway', serif !important;
 }

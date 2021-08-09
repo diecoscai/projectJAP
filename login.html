@@ -13,38 +13,31 @@
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
-  <style>
-    html, body{
-      height: 100%;
-    }
-
-    body {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-align: center;
-      align-items: center;
-      padding-top: 40px;
-      padding-bottom: 40px;
-      background-color: #f5f5f5;
-    }
-
-    .signin {
-      width: 100%;
-      max-width: 330px;
-      padding: 15px;
-      margin: auto;
-    }
-  </style>
 </head>
 
-<body class="text-center">
-  <div class="container p-5">
-    <div class="alert alert-danger" role="alert" style="position: relative; width:auto; top: 0;">
-      <h4 class="alert-heading">¡A trabajar! :)</h4>
-      <p>Esta sección corresponde a: Entrega 1 (Fecha de entrega: 08/08/2021).</p>
-      <hr>
-      <p class="mb-0">Para saber qué debes hacer, fijate en la actividad en CREA correspondiente a esta entrega.</p>
-    </div>
+<body class="text-center" id="loginBody">
+
+  <div class="page-login text-center  w-25 w-360 p-15">
+    <img class="mb-0 w-100" src="img/logo.png" alt="" >
+    <h3>Log In</h3>
+    <form name="form" class="form-login container">
+      <div class="form-group">
+        <input type="email" id="emailAddress" name="emailAddress" class="form-control"  placeholder="Enter Email" required="">  
+      </div>
+      
+      <div class="form-group">
+        <input type="password" id="password" name="password" class="form-control" placeholder="Password" required="">
+      </div>
+      
+      <div class="form-group mt-20">
+        <button id="btnLogin" class="btnGeneral btnLogin btn btn-m" type="submit" class="btn">Login</button>
+        <label>
+          <input type="checkbox" id="rememberMe"><i></i> Remember me
+        </label>
+      </div>
+      
+    </form>
+    
   </div>
 
   <script src="js/init.js"></script>
