@@ -25,7 +25,14 @@ body{
 /*#region Login*/
   #loginBody{
     background-image: url(../img/background.jpg);
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
   }
   .page-login{
     position: absolute;
