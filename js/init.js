@@ -26,12 +26,18 @@ var getJSONData = function(url){
         throw Error(response.statusText);
       }
     })
-    .then(function(response) {
-          result.status = 'ok';
-          result.data = response;
-          hideSpinner();
-          return result;
+    .then((response) => {
+      result.status = 'ok';
+      result.data = response;
+      hideSpinner();
+      return result;
     })
+      // .then(function(response) {
+    //       result.status = 'ok';
+    //       result.data = response;
+    //       hideSpinner();
+    //       return result;
+    // })
     .catch(function(error) {
         result.status = 'error';
         result.data = error;
@@ -45,3 +51,4 @@ var getJSONData = function(url){
 //elementos HTML presentes.
 document.addEventListener("DOMContentLoaded", function(e){
 });
+
