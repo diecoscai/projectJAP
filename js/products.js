@@ -70,16 +70,16 @@ async function showProductData() {
     let row = "";
     row +=
       `
+      
         <div class="card " style="width: 18rem;">
             <img class="card-img-top" src="${product.imgSrc}" alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title">${product.name}</h5>
-                <h6 class="card-subtitle">${product.cost}</h6>
-                <p class="card-text">${product.description}</p>
+                <h5 class="card-title"><a>${product.name}</a></h5>
+                <h6 class="card-subtitle">( ${product.soldCount} vendidos )</h6>
                 <div class="card-body">
-                    <p class="card-text">${product.currency}</p>
-                    <p class="card-text">${product.soldCount}</p>
-                    <a href="#" class="btn btn-primary">Comprar</a>
+                  <p class="card-text">${product.description}</p>
+                  <p class="card-cost">${product.currency} ${product.cost}</p>
+                  <button href="#" class="btnComprar btn">Agregar al Carrito <a class="bx bx-cart"></a></button>
                 </div>
             </div>
         </div>
@@ -89,3 +89,4 @@ async function showProductData() {
   }
 }
 showProductData();
+
