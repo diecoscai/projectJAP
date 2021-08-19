@@ -1,3 +1,6 @@
+document.addEventListener("DOMContentLoaded", function(e){
+});
+
 function saveData(emailAddress, password){
     if(emailAddress.trim()==="" || password.trim()===""){
         if(emailAddress.trim()===""){
