@@ -1,4 +1,4 @@
--function saveData(emailAddress, password){
+function saveData(emailAddress, password){
     if(emailAddress.trim()==="" || password.trim()===""){
         if(emailAddress.trim()===""){
             alert("Ingrese Nombre de Usuario");
