@@ -7,16 +7,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 document.getElementById("data").innerHTML = "";
 
-// let productList = getJSONData(PRODUCTS_URL);
-
-// function showPorductList(productList){
-//     let product = "";
-
-//     for(let i=0; i < productList.length; i++){
-//         let product = productList[i];
-
-//     }
-// }
 
 // function showProductData (){
 //     let result = getJSONData(PRODUCTS_URL).then(result => {
@@ -33,8 +23,8 @@ async function showProductData() {
   let result = await getJSONData(PRODUCTS_URL);
 
   for (let product of result.data) {
-    let row = "";
-    row +=
+    let cont = "";
+    cont +=
       `
       
         <div class="card " style="width: 18rem;">
@@ -51,7 +41,7 @@ async function showProductData() {
         </div>
          `;
 
-    document.getElementById("data").innerHTML += row;
+    document.getElementById("data").innerHTML += cont;
   }
 }
 showProductData();
