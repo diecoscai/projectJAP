@@ -262,14 +262,16 @@ body{
 }
 
 .btnGeneral{
-  background-color: #bee058;
-  border-color: #808699;
+  background-color: #808699;
+  border-color: #43494E;
   cursor: pointer;
   color: white;
-
+  align-items: center;
+  width: 30%;
+  margin: 0 auto;
 }
 .btnGeneral:hover{
-  background-color: #8abe04;
+  background-color: #43494E;
   color: white;
     
 }
