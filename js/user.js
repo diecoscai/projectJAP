@@ -1,9 +1,11 @@
 document.addEventListener("DOMContentLoaded", function(e){
-    function showData(){
-        var user = localStorage.getItem('user');
-        document.getElementById("userName").innerHTML += user;
-    };
-    showData();
+    let userLogged = localStorage.getItem('user-logged');
+    let user = document.getElementById("userName");
+  
+    if(userLogged){
+      userLogged = JSON.parse(userLogged);
+      user.innerHTML = userLogged.user;
+    }
 });
 
 function saveData(emailAddress, password){
@@ -29,9 +31,8 @@ function saveData(emailAddress, password){
 };
 
 
-
 function clearData(){
-    localStorage.clear();
-    location.href = "./login.html";
+        localStorage.removeItem("user-logged");
+        location.href = "./login.html";
 };
 

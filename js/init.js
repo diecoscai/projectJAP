@@ -15,6 +15,12 @@ var hideSpinner = function(){
   document.getElementById("spinner-wrapper").style.display = "none";
 }
 
+if(document.getElementById("btnLogOut")){
+  document.getElementById("btnLogOut").addEventListener('click', function(){
+    localStorage.removeItem("user-logged");
+  });
+}
+
 var getJSONData = function(url){
     var result = {};
     showSpinner();
@@ -32,7 +38,7 @@ var getJSONData = function(url){
       hideSpinner();
       return result;
     })
-      // .then(function(response) {
+     // .then(function(response) {
     //       result.status = 'ok';
     //       result.data = response;
     //       hideSpinner();
@@ -50,5 +56,6 @@ var getJSONData = function(url){
 //que el documento se encuentra cargado, es decir, se encuentran todos los
 //elementos HTML presentes.
 document.addEventListener("DOMContentLoaded", function(e){
+
 });
 
