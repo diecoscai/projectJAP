@@ -1,0 +1,137 @@
+[
+    {
+        "name": "Stardew Valley",
+        "id_category": 1,
+        "description": "Acabas de heredar la vieja parcela agrícola de tu abuelo de Stardew Valley. Decides partir hacia una nueva vida con unas herramientas usadas y algunas monedas. ¿Te ves capaz de vivir de la tierra y convertir estos campos descuidados en un hogar próspero?",
+        "cost": 329,
+        "currency": "$U",
+        "imgSrc": "img/ind1.jpg",
+        "soldCount": 200
+    },
+    {
+        "name": "Hades",
+        "id_category": 1,
+        "description": "Desafía al dios de la muerte mientras te abres paso al mejor estilo hack and slash para escapar del Inframundo en este juego de exploración de mazmorras de los creadores de Bastion y Transistor.",
+        "cost": 529,
+        "currency": "$U",
+        "imgSrc": "img/ind2.jpg",
+        "soldCount": 400
+    },
+    {
+        "name": "The Binding of Isaac: Rebirth",
+        "id_category": 1,
+        "description": "Desafía al dios de la muerte mientras te abres paso al mejor estilo hack and slash para escapar del Inframundo en este juego de exploración de mazmorras de los creadores de Bastion y Transistor.",
+        "cost": 1.136,
+        "currency": "$U",
+        "imgSrc": "img/ind3.jpg",
+        "soldCount": 800
+    },
+    {
+        "name": "Counter-Strike",
+        "id_category": 2,
+        "description": "Disfruta del juego de acción en línea n° 1 en el mundo. Sumérgete en el fragor de la guerra antiterrorista más realista con este archiconocido juego por equipos. Alíate con compañeros para superar misiones estratégicas, asalta bases enemigas, rescata rehenes, y recuerda que tu personaje contribuye al éxito del equipo y viceversa.",
+        "cost": 229,
+        "currency": "$U",
+        "imgSrc": "img/sht1.jpg",
+        "soldCount": 200 
+    },
+    {
+        "name": "Apex Legends",
+        "id_category": 2,
+        "description": "Apex Legends es el galardonado juego de disparos de héroes gratuito de Respawn Entertainment. Controla un elenco en aumento de personajes con habilidades poderosas y disfruta del juego estratégico por escuadrones y de la dinámica de juego innovadora del nuevo Battle Royale",
+        "cost": 0,
+        "currency": "$U",
+        "imgSrc": "img/sht2.jpg",
+        "soldCount": 400
+    },
+    {
+        "name": "Call of Duty: Modern Warfare 2",
+        "id_category": 2,
+        "description": "El juego más esperado del año y la secuela del juego de acción en primera persona más vendido de todos los tiempos, Modern Warfare 2 continúa la acción apasionante y acelerada mientras los jugadores se enfrentan a una nueva amenaza dedicada a traer el mundo a al borde del colapso.",
+        "cost": 0,
+        "currency": "$U",
+        "imgSrc": "img/sht3.jpg",
+        "soldCount": 800
+    },
+    {
+        "name": "HUMANKIND",
+        "id_category": 3,
+        "description": "HUMANKIND es la obra maestra de Amplitude Studios opus, un juego de estrategia histórica en el que TÚ reescribirás toda la narrativa de la humanidad: una convergencia de cultura, historia y valores que te permite crear una civilización tan única como tú. ¿HASTA LLEGAR USTED A LA HUMANIDAD?",
+        "cost": 300,
+        "currency": "$U",
+        "imgSrc": "img/str1.jpg",
+        "soldCount": 150
+    },
+    {
+        "name": "Sid Meier’s Civilization VI",
+        "id_category": 3,
+        "description": "Civilization VI ofrece nuevas formas de interactuar con su mundo, expandir su imperio por el mapa, hacer avanzar su cultura y competir contra los líderes más importantes de la historia para construir una civilización que resistirá la prueba del tiempo. Juega como uno de los 20 líderes históricos, incluidos Roosevelt (Estados Unidos) y Victoria (Inglaterra).",
+        "cost": 771,
+        "currency": "$U",
+        "imgSrc": "img/str2.jpg",
+        "soldCount": 300
+    },
+    {
+        "name": "Stronghold Crusader HD",
+        "id_category": 3,
+        "description": "Stronghold Crusader HD, la esperada secuela del éxito de ventas Stronghold, te lanza a batallas históricas y asedios de castillos de las Cruzadas con diabólicos oponentes de IA, nuevas unidades, 4 campañas históricas y más de 100 misiones de escaramuzas únicas.",
+        "cost": 229,
+        "currency": "$U",
+        "imgSrc": "img/str1.jpg",
+        "soldCount": 600
+    },
+    {
+        "name": "DARK SOULS III",
+        "id_category": 4,
+        "description": "Dark Souls continúa traspasando los límites con el último y ambicioso capítulo de la serie aclamada por la crítica y que define el género. Prepárate y abraza la oscuridad",
+        "cost": 1.199,
+        "currency": "$U",
+        "imgSrc": "img/rpg1.jpg",
+        "soldCount": 600
+    },
+    {
+        "name": "Monster Hunter: World",
+        "id_category": 4,
+        "description": "¡Bienvenidos a un mundo nuevo! En Monster Hunter: World, la última entrega de la serie, puedes disfrutar de la mejor experiencia de caza, usando todo lo que tienes a tu disposición para cazar monstruos en un nuevo mundo lleno de sorpresas y emoción.",
+        "cost": 1.050,
+        "currency": "$U",
+        "imgSrc": "img/rpg2.jpg",
+        "soldCount": 300
+    },
+    {
+        "name": "The Witcher 3: Wild Hunt",
+        "id_category": 4,
+        "description": "Justo en el momento en el que la guerra se propaga por los Reinos del Norte, aceptas el contrato más desafiante de tu vida: rastrear a la Niña de la profecía, un arma viviente que puede alterar el mundo tal y como lo conocemos.",
+        "cost": 864,
+        "currency": "$U",
+        "imgSrc": "img/rpg3.jpg",
+        "soldCount": 150
+    },
+    {
+        "name": "FINAL FANTASY XIV Online",
+        "id_category": 5,
+        "description": "Forma parte de un alucinante viaje en un increíble FINAL FANTASY en constante evolución mientras emprendes aventuras y exploras el mundo con amigos de todo el mundo.",
+        "cost": 429,
+        "currency": "$U",
+        "imgSrc": "img/mmo1.jpg",
+        "soldCount": 1000
+    },
+    {
+        "name": "Destiny 2",
+        "id_category": 5,
+        "description": "Destiny 2 es un MMO de acción en un mundo único en evolución al que tú y tus amigos pueden unirse en cualquier momento y lugar, gratuitamente.",
+        "cost": 0,
+        "currency": "$U",
+        "imgSrc": "img/mmo2.jpg",
+        "soldCount": 900
+    },
+    {
+        "name": "The Elder Scrolls Online",
+        "id_category": 5,
+        "description": "Únete a más de 18 millones de jugadores en este RPG multijugador online y vive una aventura sin límites en el mundo de The Elder Scrolls",
+        "cost": 569,
+        "currency": "$U",
+        "imgSrc": "img/mmo3.jpg",
+        "soldCount": 1500
+    }
+]

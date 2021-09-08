@@ -1,0 +1,15 @@
+{
+    "name": "FINAL FANTASY XIV Online",
+    "id_category": 5,
+    "description": "Forma parte de un alucinante viaje en un increíble FINAL FANTASY en constante evolución mientras emprendes aventuras y exploras el mundo con amigos de todo el mundo.",
+    "cost": 429,
+    "currency": "$U",
+    "soldCount": 1000,
+    "category": "RPG",
+    "images": [
+        "img/mmo1_1.jpg",
+        "img/mmo1_2.jpg",
+        "img/mmo1_3.jpg"
+    ],
+    "relatedProducts": [1, 3]
+}

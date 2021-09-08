@@ -1,0 +1,12 @@
+{
+    "id": 4,
+    "name": "RPG",
+    "description": "Videojuegos donde el jugador controla las acciones de un personaje (o de diversos miembros de un grupo) inmerso en algún detallado mundo.",
+    "productCriteria": "Incluya aquí los Videojuegos del genero Rol.",
+    "productCount": "80",
+    "images": [
+        "img/rpg1.jpg",
+        "img/rpg2.jpg",
+        "img/rpg3.jpg"
+    ]
+}

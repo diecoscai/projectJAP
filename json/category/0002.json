@@ -1,0 +1,12 @@
+{
+    "id": 2,
+    "name": "Shooter FPS",
+    "description": "Videojuegos centrado en armas de fuego desde una perspectiva de primera persona. El género comparte rasgos comunes con otros juegos de disparos, que a su vez hacen que caiga bajo el título de juego de acción.",
+    "productCriteria": "Incluya aquí los Videojuegos del genero Disparo en primera persona.",
+    "productCount": "40",
+    "images": [
+        "img/sht1.jpg",
+        "img/sht2.jpg",
+        "img/sht3.jpg"
+    ]
+}

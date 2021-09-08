@@ -1,0 +1,12 @@
+{
+    "id": 3,
+    "name": "Estrategia",
+    "description": "Videojuegos que requieren que el jugador ponga en práctica sus habilidades de planeamiento y pensamiento para maniobrar, gestionando recursos de diverso tipo para conseguir la victoria.",
+    "productCriteria": "Incluya aquí los Videojuegos del genero Estrategia.",
+    "productCount": "122",
+    "images": [
+        "img/str1.jpg",
+        "img/str2.jpg",
+        "img/str3.jpg"
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "name": "Destiny 2",
+    "id_category": 5,
+    "description": "Destiny 2 es un MMO de acción en un mundo único en evolución al que tú y tus amigos pueden unirse en cualquier momento y lugar, gratuitamente.",
+    "cost": 0,
+    "currency": "$U",
+    "soldCount": 900,
+    "category": "RPG",
+    "images": [
+        "img/mmo2_1.jpg",
+        "img/mmo2_2.jpg",
+        "img/mmo2_3.jpg"
+    ],
+    "relatedProducts": [1, 3]
+}

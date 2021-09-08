@@ -1,0 +1,15 @@
+{
+    "name": "Apex Legends",
+    "id_category": 2,
+    "description": "Apex Legends es el galardonado juego de disparos de héroes gratuito de Respawn Entertainment. Controla un elenco en aumento de personajes con habilidades poderosas y disfruta del juego estratégico por escuadrones y de la dinámica de juego innovadora del nuevo Battle Royale",
+    "cost": 0,
+    "currency": "$U",
+    "soldCount": 400,
+    "category": "Shooter FPS",
+    "images": [
+        "img/sht2_1.jpg",
+        "img/sht2_2.jpg",
+        "img/sht2_3.jpg"
+    ],
+    "relatedProducts": [1, 3]
+}

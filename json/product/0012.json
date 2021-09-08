@@ -1,0 +1,15 @@
+{
+    "name": "The Witcher 3: Wild Hunt",
+    "id_category": 4,
+    "description": "Justo en el momento en el que la guerra se propaga por los Reinos del Norte, aceptas el contrato más desafiante de tu vida: rastrear a la Niña de la profecía, un arma viviente que puede alterar el mundo tal y como lo conocemos.",
+    "cost": 864,
+    "currency": "$U",
+    "soldCount": 150,
+    "category": "RPG",
+    "images": [
+        "img/rpg3_1.jpg",
+        "img/rpg3_2.jpg",
+        "img/rpg3_3.jpg"
+    ],
+    "relatedProducts": [1, 3]
+}

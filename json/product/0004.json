@@ -1,0 +1,15 @@
+{
+    "name": "Counter-Strike",
+    "id_category": 2,
+    "description": "Disfruta del juego de acción en línea n° 1 en el mundo. Sumérgete en el fragor de la guerra antiterrorista más realista con este archiconocido juego por equipos. Alíate con compañeros para superar misiones estratégicas, asalta bases enemigas, rescata rehenes, y recuerda que tu personaje contribuye al éxito del equipo y viceversa.",
+    "cost": 229,
+    "currency": "$U",
+    "soldCount": 200, 
+    "category": "Shooter FPS",
+    "images": [
+        "img/sht1_1.jpg",
+        "img/sht1_2.jpg",
+        "img/sht1_3.jpg"
+    ],
+    "relatedProducts": [1, 3]
+}

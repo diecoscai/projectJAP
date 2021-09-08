@@ -1,0 +1,15 @@
+{
+    "name": "The Elder Scrolls Online",
+    "id_category": 5,
+    "description": "Únete a más de 18 millones de jugadores en este RPG multijugador online y vive una aventura sin límites en el mundo de The Elder Scrolls",
+    "cost": 569,
+    "currency": "$U",
+    "soldCount": 1500,
+    "category": "RPG",
+    "images": [
+        "img/mmo3_1.jpg",
+        "img/mmo3_2.jpg",
+        "img/mmo3_3.jpg"
+    ],
+    "relatedProducts": [1, 3]
+}

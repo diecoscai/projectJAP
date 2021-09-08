@@ -1,0 +1,41 @@
+[
+    {
+        "id": 1,
+        "name": "Indie",
+        "description": "Videojuegos desarrollados por grupos reducidos de individuos o pequeñas empresas. No suelen contar con el apoyo financiero de distribuidores y publicistas, sino que su difusión depende principalmente de la voluntad de los jugadores para compartirlos con otros.",
+        "productCount": "20",
+        "imgSrc": "img/ind.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Shooter FPS",
+        "description": "Videojuegos centrado en armas de fuego desde una perspectiva de primera persona. El género comparte rasgos comunes con otros juegos de disparos, que a su vez hacen que caiga bajo el título de juego de acción.",
+        "productCount": "40",
+        "imgSrc": "img/fps.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Estrategia",
+        "description": "Videojuegos que requieren que el jugador ponga en práctica sus habilidades de planeamiento y pensamiento para maniobrar, gestionando recursos de diverso tipo para conseguir la victoria.",
+        "productCount": "60",
+        "imgSrc": "img/est.jpg"
+    },
+    {
+        "id": 4,
+        "name": "RPG",
+        "description": "Videojuegos donde el jugador controla las acciones de un personaje (o de diversos miembros de un grupo) inmerso en algún detallado mundo.",
+        "productCount": "80",
+        "imgSrc": "img/rpg.jpg"
+    },
+    {
+        "id": 5,
+        "name": "MMORPG",
+        "description": "Videojuegos de rol que permiten a miles de jugadores introducirse en un mundo virtual de forma simultánea a través de internet e interactuar entre ellos.",
+        "productCount": "100",
+        "imgSrc": "img/mmorpg.jpg"
+    }
+]
+
+
+
+

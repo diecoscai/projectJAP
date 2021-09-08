@@ -1,0 +1,15 @@
+{
+    "name": "HUMANKIND",
+    "id_category": 3,
+    "description": "HUMANKIND es la obra maestra de Amplitude Studios opus, un juego de estrategia histórica en el que TÚ reescribirás toda la narrativa de la humanidad: una convergencia de cultura, historia y valores que te permite crear una civilización tan única como tú. ¿HASTA LLEGAR USTED A LA HUMANIDAD?",
+    "cost": 300,
+    "currency": "$U",
+    "soldCount": 150,
+    "category": "Estrategia",
+    "images": [
+        "img/str1_1.jpg",
+        "img/str1_2.jpg",
+        "img/str1_3.jpg"
+    ],
+    "relatedProducts": [1, 3]
+}

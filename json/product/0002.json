@@ -1,0 +1,15 @@
+{
+    "name": "Hades",
+    "id_category": 1,
+    "description": "Desafía al dios de la muerte mientras te abres paso al mejor estilo hack and slash para escapar del Inframundo en este juego de exploración de mazmorras de los creadores de Bastion y Transistor.",
+    "cost": 529,
+    "currency": "$U",
+    "soldCount": 400,
+    "category": "Indie",
+    "images": [
+        "img/ind2_1.jpg",
+        "img/ind2_2.jpg",
+        "img/ind2_3.jpg"
+    ],
+    "relatedProducts": [1, 3]
+}

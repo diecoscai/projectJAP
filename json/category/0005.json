@@ -1,0 +1,12 @@
+{
+    "id": 5,
+    "name": "MMORPG",
+    "description": "Videojuegos de rol que permiten a miles de jugadores introducirse en un mundo virtual de forma simultánea a través de internet e interactuar entre ellos.",
+    "productCriteria": "Incluya aquí los Videojuegos del genero Rol Multijugador Masivos en Línea.",
+    "productCount": "100",
+    "images": [
+        "img/mmo1.jpg",
+        "img/mmo2.jpg",
+        "img/mmo3.jpg"
+    ]
+}

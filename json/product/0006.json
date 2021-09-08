@@ -1,0 +1,15 @@
+{
+    "name": "Call of Duty: Modern Warfare 2",
+    "id_category": 2,
+    "description": "El juego más esperado del año y la secuela del juego de acción en primera persona más vendido de todos los tiempos, Modern Warfare 2 continúa la acción apasionante y acelerada mientras los jugadores se enfrentan a una nueva amenaza dedicada a traer el mundo a al borde del colapso.",
+    "cost": 0,
+    "currency": "$U",
+    "soldCount": 800,
+    "category": "Shooter FPS",
+    "images": [
+        "img/sht3_1.jpg",
+        "img/sht3_2.jpg",
+        "img/sht3_3.jpg"
+    ],
+    "relatedProducts": [1, 3]
+}

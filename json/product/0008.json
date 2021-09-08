@@ -1,0 +1,15 @@
+{
+    "name": "Sid Meier’s Civilization VI",
+    "id_category": 3,
+    "description": "Civilization VI ofrece nuevas formas de interactuar con su mundo, expandir su imperio por el mapa, hacer avanzar su cultura y competir contra los líderes más importantes de la historia para construir una civilización que resistirá la prueba del tiempo. Juega como uno de los 20 líderes históricos, incluidos Roosevelt (Estados Unidos) y Victoria (Inglaterra).",
+    "cost": 771,
+    "currency": "$U",
+    "soldCount": 300,
+    "category": "Estrategia",
+    "images": [
+        "img/str2_1.jpg",
+        "img/str2_2.jpg",
+        "img/str2_3.jpg"
+    ],
+    "relatedProducts": [1, 3]
+}

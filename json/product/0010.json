@@ -1,0 +1,15 @@
+{
+    "name": "DARK SOULS III",
+    "id_category": 4,
+    "description": "Dark Souls continúa traspasando los límites con el último y ambicioso capítulo de la serie aclamada por la crítica y que define el género. Prepárate y abraza la oscuridad",
+    "cost": 1.199,
+    "currency": "$U",
+    "soldCount": 600,
+    "category": "RPG",
+    "images": [
+        "img/rpg1_1.jpg",
+        "img/rpg1_2.jpg",
+        "img/rpg1_3.jpg"
+    ],
+    "relatedProducts": [1, 3]
+}

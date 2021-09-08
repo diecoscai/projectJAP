@@ -1,0 +1,15 @@
+{
+    "name": "The Binding of Isaac: Rebirth",
+    "id_category": 1,
+    "description": "Desafía al dios de la muerte mientras te abres paso al mejor estilo hack and slash para escapar del Inframundo en este juego de exploración de mazmorras de los creadores de Bastion y Transistor.",
+    "cost": 1.136,
+    "currency": "$U",
+    "soldCount": 800,
+    "category": "Indie",
+    "images": [
+        "img/ind3_1.jpg",
+        "img/ind3_2.jpg",
+        "img/ind3_3.jpg"
+    ],
+    "relatedProducts": [1, 3]
+}

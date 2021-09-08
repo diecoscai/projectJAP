@@ -1,0 +1,16 @@
+{
+    "name": "Monster Hunter: World",
+    "id_category": 4,
+    "description": "¡Bienvenidos a un mundo nuevo! En Monster Hunter: World, la última entrega de la serie, puedes disfrutar de la mejor experiencia de caza, usando todo lo que tienes a tu disposición para cazar monstruos en un nuevo mundo lleno de sorpresas y emoción.",
+    "cost": 1.050,
+    "currency": "$U",
+    "imgSrc": "img/rpg2.jpg",
+    "soldCount": 300,
+    "category": "RPG",
+    "images": [
+        "img/rpg2_1.jpg",
+        "img/rpg2_2.jpg",
+        "img/rpg2_3.jpg"
+    ],
+    "relatedProducts": [1, 3]
+}

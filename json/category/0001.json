@@ -1,0 +1,12 @@
+{
+    "id": 1,
+    "name": "Indie",
+    "description": "Videojuegos desarrollados por grupos reducidos de individuos o pequeñas empresas. No suelen contar con el apoyo financiero de distribuidores y publicistas, sino que su difusión depende principalmente de la voluntad de los jugadores para compartirlos con otros.",
+    "productCriteria": "Incluya aquí los Videojuegos del genero Independiente",
+    "productCount": "20",
+    "images": [
+        "img/ind1.jpg",
+        "img/ind2.jpg",
+        "img/ind3.jpg"
+    ]
+}
