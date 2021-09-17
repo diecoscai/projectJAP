@@ -3,38 +3,6 @@ var costMin;
 var costMax;
 var arrayProducts = [];
 
-// show data on cards
-function showProductData(array) {
-  let cont = "";
-
-  for (let product of array) {
-
-    if(((costMin == undefined) || (costMin != undefined && product.cost >= costMin)) &&
-      ((costMax == undefined) || (costMax != undefined && product.cost <= costMax))){
-        console.log("hola", {costMin,costMax, product});
-        if((search == undefined || product.name.toLowerCase().indexOf(search) != -1)){
-          
-        cont += `
-          
-            <div class="card " style="width: 18rem;">
-                <img class="card-img-top" src="${product.imgSrc}" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title"><a>${product.name}</a></h5>
-                    <h6 class="card-subtitle">( ${product.soldCount} vendidos )</h6>
-                    <div class="card-body">
-                      <p class="card-text">${product.description}</p>
-                      <p class="card-cost">${product.currency} ${product.cost}</p>
-                      <a href="product-info.html?id=${product.id}" class="btnComprar btn">Detalle</a>
-                    </div>
-                </div>
-            </div>
-            `;
-    }
-  }
-  document.getElementById("data").innerHTML = cont;
-}
-}
-
 //FUNCIONES
 
 function orderByCant(array) {
@@ -101,6 +69,39 @@ document.getElementById("btnFilterCost").addEventListener("click", function(){
   }
   showProductData(arrayProducts);
 });
+
+// show data on cards
+function showProductData(array) {
+  let cont = "";
+
+  for (let product of array) {
+
+    if(((costMin == undefined) || (costMin != undefined && product.cost >= costMin)) &&
+      ((costMax == undefined) || (costMax != undefined && product.cost <= costMax))){
+        console.log("hola", {costMin,costMax, product});
+        if((search == undefined || product.name.toLowerCase().indexOf(search) != -1)){
+          
+        cont += `
+          
+            <div class="card " style="width: 18rem;">
+                <img class="card-img-top" src="${product.imgSrc}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"><a>${product.name}</a></h5>
+                    <h6 class="card-subtitle">( ${product.soldCount} vendidos )</h6>
+                    <div class="card-body">
+                      <p class="card-text">${product.description}</p>
+                      <p class="card-cost">${product.currency} ${product.cost}</p>
+                      <a href="product-info.html?id=${product.id}" class="btnComprar btn">Detalle</a>
+                    </div>
+                </div>
+            </div>
+            `;
+    }
+  }
+  document.getElementById("data").innerHTML = cont;
+}
+}
+
 
 document.getElementById("btnClearFilter").addEventListener("click", function(){
   document.getElementById("costMin").value = "";

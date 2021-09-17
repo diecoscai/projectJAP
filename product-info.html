@@ -90,18 +90,19 @@
         </div>
         <div class="row">
           <div class="col-md-1">
-            <input type="submit" id="btnSend" value="Enviar" class="form-submit" />
+            <input type="submit" id="btnSend" value="Enviar" onclick="sendComment()" class="form-submit" />
           </div>
           <div class="col" id="score">
             <div class="rate">
-              <span class="fa fa-star"onclick="checkStar('0')" value="1"></span>
-              <span class="fa fa-star"onclick="checkStar('1')" value="2"></span>
-              <span class="fa fa-star"onclick="checkStar('2')" value="3"></span>
-              <span class="fa fa-star"onclick="checkStar('3')" value="4"></span>
-              <span class="fa fa-star"onclick="checkStar('4')" value="5"></span>
+              <span class="fa fa-star" onclick="checkStar(0)" value="1"></span>
+              <span class="fa fa-star" onclick="checkStar(1)" value="1"></span>
+              <span class="fa fa-star" onclick="checkStar(2)" value="1"></span>
+              <span class="fa fa-star" onclick="checkStar(3)" value="1"></span>
+              <span class="fa fa-star" onclick="checkStar(4)" value="1"></span>
             </div>
           </div>
         </div>
+        <div id="commentPost"></div>
         <div id="comentSpot"></div>
       </div>
     </div>
