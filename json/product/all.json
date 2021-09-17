@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "name": "Stardew Valley",
         "id_category": 1,
         "description": "Acabas de heredar la vieja parcela agrícola de tu abuelo de Stardew Valley. Decides partir hacia una nueva vida con unas herramientas usadas y algunas monedas. ¿Te ves capaz de vivir de la tierra y convertir estos campos descuidados en un hogar próspero?",
@@ -9,6 +10,7 @@
         "soldCount": 200
     },
     {
+        "id": 2,
         "name": "Hades",
         "id_category": 1,
         "description": "Desafía al dios de la muerte mientras te abres paso al mejor estilo hack and slash para escapar del Inframundo en este juego de exploración de mazmorras de los creadores de Bastion y Transistor.",
@@ -18,6 +20,7 @@
         "soldCount": 400
     },
     {
+        "id": 3,
         "name": "The Binding of Isaac: Rebirth",
         "id_category": 1,
         "description": "Desafía al dios de la muerte mientras te abres paso al mejor estilo hack and slash para escapar del Inframundo en este juego de exploración de mazmorras de los creadores de Bastion y Transistor.",
@@ -27,6 +30,7 @@
         "soldCount": 800
     },
     {
+        "id": 4,
         "name": "Counter-Strike",
         "id_category": 2,
         "description": "Disfruta del juego de acción en línea n° 1 en el mundo. Sumérgete en el fragor de la guerra antiterrorista más realista con este archiconocido juego por equipos. Alíate con compañeros para superar misiones estratégicas, asalta bases enemigas, rescata rehenes, y recuerda que tu personaje contribuye al éxito del equipo y viceversa.",
@@ -36,6 +40,7 @@
         "soldCount": 200 
     },
     {
+        "id": 5,
         "name": "Apex Legends",
         "id_category": 2,
         "description": "Apex Legends es el galardonado juego de disparos de héroes gratuito de Respawn Entertainment. Controla un elenco en aumento de personajes con habilidades poderosas y disfruta del juego estratégico por escuadrones y de la dinámica de juego innovadora del nuevo Battle Royale",
@@ -45,6 +50,7 @@
         "soldCount": 400
     },
     {
+        "id": 6,
         "name": "Call of Duty: Modern Warfare 2",
         "id_category": 2,
         "description": "El juego más esperado del año y la secuela del juego de acción en primera persona más vendido de todos los tiempos, Modern Warfare 2 continúa la acción apasionante y acelerada mientras los jugadores se enfrentan a una nueva amenaza dedicada a traer el mundo a al borde del colapso.",
@@ -54,6 +60,7 @@
         "soldCount": 800
     },
     {
+        "id": 7,
         "name": "HUMANKIND",
         "id_category": 3,
         "description": "HUMANKIND es la obra maestra de Amplitude Studios opus, un juego de estrategia histórica en el que TÚ reescribirás toda la narrativa de la humanidad: una convergencia de cultura, historia y valores que te permite crear una civilización tan única como tú. ¿HASTA LLEGAR USTED A LA HUMANIDAD?",
@@ -63,6 +70,7 @@
         "soldCount": 150
     },
     {
+        "id": 8,
         "name": "Sid Meier’s Civilization VI",
         "id_category": 3,
         "description": "Civilization VI ofrece nuevas formas de interactuar con su mundo, expandir su imperio por el mapa, hacer avanzar su cultura y competir contra los líderes más importantes de la historia para construir una civilización que resistirá la prueba del tiempo. Juega como uno de los 20 líderes históricos, incluidos Roosevelt (Estados Unidos) y Victoria (Inglaterra).",
@@ -72,6 +80,7 @@
         "soldCount": 300
     },
     {
+        "id": 9,
         "name": "Stronghold Crusader HD",
         "id_category": 3,
         "description": "Stronghold Crusader HD, la esperada secuela del éxito de ventas Stronghold, te lanza a batallas históricas y asedios de castillos de las Cruzadas con diabólicos oponentes de IA, nuevas unidades, 4 campañas históricas y más de 100 misiones de escaramuzas únicas.",
@@ -81,6 +90,7 @@
         "soldCount": 600
     },
     {
+        "id": 10,
         "name": "DARK SOULS III",
         "id_category": 4,
         "description": "Dark Souls continúa traspasando los límites con el último y ambicioso capítulo de la serie aclamada por la crítica y que define el género. Prepárate y abraza la oscuridad",
@@ -90,6 +100,7 @@
         "soldCount": 600
     },
     {
+        "id": 11,
         "name": "Monster Hunter: World",
         "id_category": 4,
         "description": "¡Bienvenidos a un mundo nuevo! En Monster Hunter: World, la última entrega de la serie, puedes disfrutar de la mejor experiencia de caza, usando todo lo que tienes a tu disposición para cazar monstruos en un nuevo mundo lleno de sorpresas y emoción.",
@@ -99,6 +110,7 @@
         "soldCount": 300
     },
     {
+        "id": 12,
         "name": "The Witcher 3: Wild Hunt",
         "id_category": 4,
         "description": "Justo en el momento en el que la guerra se propaga por los Reinos del Norte, aceptas el contrato más desafiante de tu vida: rastrear a la Niña de la profecía, un arma viviente que puede alterar el mundo tal y como lo conocemos.",
@@ -108,6 +120,7 @@
         "soldCount": 150
     },
     {
+        "id": 13,
         "name": "FINAL FANTASY XIV Online",
         "id_category": 5,
         "description": "Forma parte de un alucinante viaje en un increíble FINAL FANTASY en constante evolución mientras emprendes aventuras y exploras el mundo con amigos de todo el mundo.",
@@ -117,6 +130,7 @@
         "soldCount": 1000
     },
     {
+        "id": 14,
         "name": "Destiny 2",
         "id_category": 5,
         "description": "Destiny 2 es un MMO de acción en un mundo único en evolución al que tú y tus amigos pueden unirse en cualquier momento y lugar, gratuitamente.",
@@ -126,6 +140,7 @@
         "soldCount": 900
     },
     {
+        "id": 15,
         "name": "The Elder Scrolls Online",
         "id_category": 5,
         "description": "Únete a más de 18 millones de jugadores en este RPG multijugador online y vive una aventura sin límites en el mundo de The Elder Scrolls",
