@@ -35,6 +35,8 @@ function sortCategories(criteria, array){
     return result;
 }
 
+
+
 function showCategoriesList(){
 
     let htmlContentToAppend = "";

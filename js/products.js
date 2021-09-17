@@ -10,7 +10,7 @@ function showProductData(array) {
   for (let product of array) {
 
     if(((costMin == undefined) || (costMin != undefined && product.cost >= costMin)) &&
-       ((costMax == undefined) || (costMax != undefined && product.cost <= costMax))){
+      ((costMax == undefined) || (costMax != undefined && product.cost <= costMax))){
         console.log("hola", {costMin,costMax, product});
         if((search == undefined || product.name.toLowerCase().indexOf(search) != -1)){
           
@@ -24,7 +24,7 @@ function showProductData(array) {
                     <div class="card-body">
                       <p class="card-text">${product.description}</p>
                       <p class="card-cost">${product.currency} ${product.cost}</p>
-                      <button href="#" class="btnComprar btn">Agregar al Carrito <a class="bx bx-cart"></a></button>
+                      <a href="product-info.html?id=${product.id}" class="btnComprar btn">Detalle</a>
                     </div>
                 </div>
             </div>
@@ -34,7 +34,6 @@ function showProductData(array) {
   document.getElementById("data").innerHTML = cont;
 }
 }
-
 
 //FUNCIONES
 

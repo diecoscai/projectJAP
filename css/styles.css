@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
 * {
   margin: 0;
 }
@@ -15,13 +15,13 @@
   --first-color: #43494e;
   --first-color-light: #afa5d9;
   --white-color: #f7f6fb;
-  --body-font: "Nunito", sans-serif;
+  --body-font: 'Titillium Web', sans-serif;
   --normal-font-size: 1rem;
   --z-fixed: 100;
 }
 
 body {
-  font-family: "Dosis", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   font-weight: 400;
   font-size: 14px;
 }
@@ -183,7 +183,7 @@ body {
   }
 
   .userName{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     color: #fff;
     font-weight: bold;
     
@@ -211,7 +211,6 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
   padding: 40px;
-  padding-top: 100px;
   grid-column-start: 1;
 }
 
@@ -219,7 +218,7 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: x-large;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .card-title > a {
@@ -245,7 +244,7 @@ body {
   background: rgba(255, 255, 255, 0.5);
 }
 
-.btnComprar {
+/* .btnComprar {
   display: flex;
   align-items: center;
   padding-top: 10px;
@@ -263,7 +262,7 @@ body {
   color: var(--white-color);
   background-color: var(--first-color);
   border-color: var(--first-color);
-}
+} */
 
 /*#endregion cartas*/
 
@@ -281,6 +280,8 @@ body {
 
 
 
+/*#region Buttons*/
+
 .btnGeneral {
   background-color: #808699;
   border-color: #43494e;
@@ -293,6 +294,97 @@ body {
   background-color: #43494e;
   color: white;
 }
+.btn-primary{
+  background-color:#f1b56f;
+  font-size: large;
+  border-color:#fff;
+  font-weight:600
+}
+.btn-primary:hover{
+  background-color:#f5a03e;
+  border-color:#fff
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+  background-color:#d18329;
+  border-color:#fff
+}
+.btn-primary.focus,.btn-primary:focus{
+  box-shadow:0 0 0 .2rem rgba(255, 161, 38, 0.5)
+}
+.btn-primary:active{
+  color: #f1b56f !important; 
+  background-color:#fff !important;
+  box-shadow:0 0 0 .2rem rgba(255, 161, 38, 0.5) !important
+
+}
+
+.btn-secondary{
+  color: #f1b56f;
+  font-size: large;
+  background-color:#fff;
+  border-color:#f1b56f;
+  font-weight:600
+}
+.btn-secondary:hover{
+  background-color:#fff;
+  border-color:#f5a03e
+}
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+  background-color:#dee5ec;
+  border-color:#d18329
+}
+.btn-secondary:focus{
+  box-shadow:0 0 0 .2rem rgba(255, 161, 38, 0.5)
+}
+.btn-secondary:active{
+  background-color:#f1b56f !important; 
+  border-color:#fff !important;
+  box-shadow:0 0 0 .2rem rgba(255, 161, 38, 0.5) !important
+
+}
+
+.btnComprar{
+  width:100%;
+  height:50px;
+  text-align:center;
+  margin: 5px;  
+}
+/*#endregion Buttons*/
+
+/*#region Comments*/
+
+.contComment{
+  display: grid;
+  width: 100%;
+
+}
+
+.comment{
+  padding: 25px;
+  position: relative;
+}
+
+.upComment{
+  padding-bottom: 10px;
+}
+.userComment{
+  font-size: 20px;
+}
+
+.dateComment{
+  font-size: 13px;
+  position: absolute;
+  right: 0;
+}
+.descComment{
+  color: #000;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/*#endregion Comments*/
+
 
 /*#region Login*/
 #loginBody {
@@ -325,18 +417,45 @@ body {
 }
 
 .page-login h3 {
-  font-family: "Arial";
+  font-family: 'Titillium Web', sans-serif;
   color: #585c69;
   font-size: xx-large;
 }
 
 /*#endregion Login*/
-.jumbotron,
-.card-body,
-.container,
-.site-header {
-  font-family: "Raleway", serif !important;
+
+/*#region Detail*/
+.textComment{
+  margin: 0 -6px;
+  border: 1px solid #c7c7c7;
+  font: 13px "Sgy Open Sans", "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+  padding: 5px;
+  resize: none;
+  word-wrap: break-word;
 }
+
+.breakLine{
+  border-bottom: 1px solid #000; 
+  line-height: 0.1em;
+  margin: 10px 0 20px
+}
+
+.descProd{
+  font-size: x-large;
+}
+
+.costProd{
+  float: right;
+  
+}
+
+.cost{
+  font-size: 36px
+}
+
+/*#endregion Detail*/
+
+
 
 .jumbotron .display-4 {
   font-weight: bold;
@@ -348,7 +467,7 @@ body {
   margin-bottom: 0;
   background-color: #53c0fb;
   background: url("../img/cover_back.png");
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   color: black;
