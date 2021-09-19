@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
 * {
   margin: 0;
+  font-weight: bold
 }
 *,
 ::before,
@@ -349,6 +350,10 @@ body {
   text-align:center;
   margin: 5px;  
 }
+
+.btnDetalle{
+  margin-bottom: 10px;
+}
 /*#endregion Buttons*/
 
 /*#region Comments*/
@@ -441,7 +446,7 @@ body {
 }
 
 .descProd{
-  font-size: x-large;
+  font-size: large;
 }
 
 .costProd{

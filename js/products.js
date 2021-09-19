@@ -91,7 +91,7 @@ function showProductData(array) {
                     <div class="card-body">
                       <p class="card-text">${product.description}</p>
                       <p class="card-cost">${product.currency} ${product.cost}</p>
-                      <a href="product-info.html?id=${product.id}" class="btnComprar btn">Detalle</a>
+                      <a type="button" href="product-info.html?id=${product.id}" class="btn btn-primary btnComprar btnDetalle">Detalle</a>
                     </div>
                 </div>
             </div>

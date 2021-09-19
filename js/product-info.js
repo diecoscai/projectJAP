@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
         }
     });
 
-    getJSONData(COMMENTS_URL).then((resultado) => {
+    getJSONData(comments).then((resultado) => {
         if (resultado.status == "ok") {
             com = resultado.data;
             // console.log(com);
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
                     </div>
                 </div>
                 <div class="col">
-                    <h4>Descripcion:</h4>
+                    <h3>Descripcion:</h3>
                     <div class="breakLine"></div>
                     <p class="descProd">${prod.description}</p>
                 </div>
