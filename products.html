@@ -3,25 +3,14 @@
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    
     <meta name="description" content="" />
     <title>eMercado - Todo lo que busques está aquí</title>
 
-    <link
-      rel="canonical"
-      href="https://getbootstrap.com/docs/4.3/examples/album/"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet" />
     <link href="css/font-awesome.min.css" rel="stylesheet" />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
@@ -29,10 +18,24 @@
 
   <body id="body-pd" class="body-content">
     <!-- HEADER -->
-
     <header class="header" id="header">
-      <div class="header_toggle">
-        <i class="bx bx-menu" id="header-toggle"></i>
+      <div class="col">
+        <div class="header_toggle">
+          <i class="bx bx-menu" id="header-toggle"></i>
+        </div>
+      </div>
+      <div class="col-md-10"></div>
+      <div class="col-md-2">
+        <div class="dropdown">
+          <button class="btn btn-primary btnDetalle dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="userName" id="userName"></span>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="my-profile.html">Mi Perfil</a>
+            <a class="dropdown-item" href="cart.html">Ver Carrito</a>
+            <a class="dropdown-item" href="#" id="btnLogOut" onclick="clearData();"><i class="bx bx-log-out nav_icon"></i> SignOut</a>
+          </div>
+        </div>
       </div>
       <!-- <div class="header_img"> <img src="https://imgur.com/krokYmO.jpg" alt=""> </div> -->
     </header>
@@ -42,9 +45,8 @@
       <nav class="nav">
         <div class="nav_list">
           <div id="toggleId">
-            <a href="my-profile.html">
-              <img class="avatar" src="https://imgur.com/krokYmO.jpg" />
-              <span class="userName" id="userName"></span>
+            <a href="">
+              <img class="avatar" src="https://imgur.com/krokYmO.jpg" />  
             </a>
             <a href="home.html" class="nav_logo">
               <i class="bx bx-layer nav_logo-icon"></i>
@@ -62,32 +64,19 @@
               <i class="bx bx-dollar-circle nav_icon"></i>
               <span class="nav_name">Vender</span>
             </a>
-            <a href="cart.html" class="nav_link">
-              <i class="bx bx-cart nav_icon"></i>
-              <span class="nav_name">Mi carrito</span>
-            </a>
           </div>
-          <a href="#" class="nav_link" id="btnLogOut" onclick="clearData();">
-            <i class="bx bx-log-out nav_icon"></i>
-            <span class="nav_name">SignOut</span>
-          </a>
         </div>
       </nav>
     </div>
 
     <!-- CONTENIDO -->
-    <div class="contenido col-md-10" >
+    <div class="contenido col-md-10 " >
       <div class="justify-content-end">
         <div class="col-md-12 col-sm-12 mb-1">
           <div class="row p-0 m-0 col-md-12">
             <!-- SEARCH -->
             <div class="col-md-3">
-              <input
-                type="text"
-                class="form-control input-group"
-                id="search"
-                placeholder="Search"
-              />
+              <input type="text"class="form-control input-group" id="search" placeholder="Search"/>
             </div>
 
             <!-- FILTER COST -->
@@ -95,30 +84,17 @@
               <p class="font-weight-normal text-right my-2">Cost.</p>
             </div>
             <div class="col">
-              <input
-                class="form-control"
-                type="number"
-                placeholder="min."
-                id="costMin"
-              />
+              <input class="form-control" type="number" placeholder="min." id="costMin"/>
             </div>
             <div class="col">
-              <input
-                class="form-control"
-                type="number"
-                placeholder="max."
-                id="costMax"
-              />
+              <input class="form-control" type="number" placeholder="max." id="costMax"/>
             </div>
             <div class="col">
               <div class="btn-group" role="group">
                 <button class="btn btn-light" id="btnFilterCost">
                   Filter
                 </button>
-                <button
-                  class="btn btn-light"
-                  id="btnClearFilter"
-                >
+                <button class="btn btn-light" id="btnClearFilter">
                   Clean
                 </button>
               </div>

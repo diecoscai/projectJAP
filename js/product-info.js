@@ -1,5 +1,6 @@
 var scoreComment = "";
 var stars ="";
+var producto ="";
 
 
 document.addEventListener("DOMContentLoaded", function (e) {
@@ -16,9 +17,28 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
     getJSONData(prod).then((resultado) => {
         if (resultado.status == "ok") {
-            prod = resultado.data;
-            showProductInfo(prod);
-            // console.log(prod);
+            item = resultado.data;
+            producto = item;
+
+            getJSONData(PRODUCTS_URL).then((resultado) => {
+                if (resultado.status == "ok") {
+                    item = resultado.data;
+                    showSimilarProducts(item);
+                } else {
+                    alert(resultado.data);
+                }
+            });
+
+            showProductInfo(item);
+        } else {
+            alert(resultado.data);
+        }
+    });
+
+    getJSONData(PRODUCTS_URL).then((resultado) => {
+        if (resultado.status == "ok") {
+            item = resultado.data;
+            showSimilarProducts(item);
         } else {
             alert(resultado.data);
         }
@@ -34,16 +54,22 @@ document.addEventListener("DOMContentLoaded", function (e) {
         }
     });
 
+
+
+
+
+    //Functions 
+
     function showProductInfo(obj) {
         let cont = `
         <div class="row">
             <div class="col">
-                <h1>${prod.name}</h1> 
+                <h1>${obj.name}</h1> 
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <h4>${prod.category}</h4>
+                <h4>${obj.category}</h4>
             </div>
         </div>
         <div class="row">
@@ -51,13 +77,13 @@ document.addEventListener("DOMContentLoaded", function (e) {
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="img/${prod.id}/1.jpg" alt="First slide">
+                            <img class="d-block w-100" src="img/${obj.id}/1.jpg" alt="First slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="img/${prod.id}/2.jpg" alt="Second slide">
+                            <img class="d-block w-100" src="img/${obj.id}/2.jpg" alt="Second slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="img/${prod.id}/3.jpg" alt="Third slide">
+                            <img class="d-block w-100" src="img/${obj.id}/3.jpg" alt="Third slide">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -73,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
                 <div class="col">
                     <h3>Descripcion:</h3>
                     <div class="breakLine"></div>
-                    <p class="descProd">${prod.description}</p>
+                    <p class="descProd">${obj.description}</p>
                 </div>
             </div>
             <div class="row">
@@ -81,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
                 <div class="col-md-6 costProd">
                     <div class="row">
                     <div class="col-md-3">
-                        <span class="cost">${prod.currency}</span><span class="cost">${prod.cost}</span>
+                        <span class="cost">${obj.currency}</span><span class="cost">${obj.cost}</span>
                     </div>
                 </div>
                 <div class="row">
@@ -95,6 +121,25 @@ document.addEventListener("DOMContentLoaded", function (e) {
             </div>
             `;
         document.getElementById("productData").innerHTML = cont;
+    }
+
+    function showSimilarProducts(array){
+        let cont = "";
+       //console.log("Similar Products",{producto,array})
+        for(let item of array){
+            if(item.id_category == producto.id_category && item.id !== producto.id){
+                //console.log("carga if",producto);
+                cont += 
+                `       
+                        <div class= "col col-md-4">
+                            <span>${item.name}</span>
+                            <img href="" class="img-thumbnail" src="${item.imgSrc}">
+                        </div>
+                        `;
+            }
+        }
+        document.getElementById("similarProds").innerHTML = cont;
+
     }
 
 });
@@ -112,7 +157,7 @@ function checkStar(score){
                 stars[i].classList.remove('checked');
             }
         }
-        console.log(scoreComment);
+        //console.log(scoreComment);
     }
 
     function sendComment(){
@@ -122,7 +167,7 @@ function checkStar(score){
         com.description = comment;
         com.user = "Pepito";
         com.dateTime = new Date();
-        console.log(com.score);
+        //console.log(com.score);
         showStars(com.score);
         let cont = `
                     <div class="col comment">
@@ -215,3 +260,5 @@ function checkStar(score){
             `;
         }
     }
+
+

@@ -22,7 +22,7 @@
 }
 
 body {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Trebuchet MS', sans-serif;
   font-weight: 400;
   font-size: 14px;
 }
@@ -30,6 +30,7 @@ body {
 .contenido {
   width: 85%;
   margin: auto;
+  padding-top: 30px
 }
 
 
@@ -47,10 +48,11 @@ body {
   padding: 0 1rem;
   z-index: var(--z-fixed);
   transition: 0.5s;
+  background-color: var(--first-color)
 }
 
 .header_toggle {
-  color: var(--first-color);
+  color: var(--white-color);
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -72,7 +74,7 @@ body {
   position: relative;
   margin: var(--header-height) 0 0 0;
   padding: 0 1rem;
-  font-family: var(--body-font);
+  font-family: 'Trebuchet MS', sans-serif;
   font-size: var(--normal-font-size);
   transition: 0.5s;
   /* background-image: url("../img/background.jpg"); */
@@ -216,12 +218,14 @@ body {
 }
 
 .card-title {
-  padding-top: 10px;
-  padding-bottom: 10px;
   font-size: x-large;
   font-family: 'Titillium Web', sans-serif;
 }
 
+.card-text{
+  font-family: var(--body-font)
+  
+}
 .card-title > a {
   text-decoration: none;
   color: inherit;
@@ -231,18 +235,20 @@ body {
   font-size: 0.825em;
   font-style: italic;
   color: var(--lightgrey);
-  padding-bottom: 10px;
+
 }
 
 .card-cost {
   display: flex;
   align-items: center;
   font-size: 24px;
-  padding-bottom: 10px;
-}
+  font-family: var(--body-font)
+
+} 
 
 .card {
   background: rgba(255, 255, 255, 0.5);
+  
 }
 
 /* .btnComprar {

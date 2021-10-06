@@ -78,7 +78,7 @@ function showProductData(array) {
 
     if(((costMin == undefined) || (costMin != undefined && product.cost >= costMin)) &&
       ((costMax == undefined) || (costMax != undefined && product.cost <= costMax))){
-        console.log("hola", {costMin,costMax, product});
+        //console.log("hola", {costMin,costMax, product});
         if((search == undefined || product.name.toLowerCase().indexOf(search) != -1)){
           
         cont += `
