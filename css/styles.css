@@ -647,3 +647,8 @@ input{
     border: 1px solid rgba(0,0,0,.125);
     border-radius: .25rem;
     }
+
+    .btnCurrency{
+      height: 20px;
+      width: 40px;
+    }

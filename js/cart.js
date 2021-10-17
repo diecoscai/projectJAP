@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function(e){
                         <div class="col-sm-4">
                         <div class="row">
                             <div class="col-sm-12 mx-auto">
-                                <input type="numer" id="cant${i}" class="form-control input-number" onchange="subCost(${item.unitCost}, ${i})" value="${item.count}" min="1" max="10">
+                                <input type="number" id="cant${i}" class="form-control input-number" onchange="subCost(${item.unitCost}, ${i})" value="${item.count}" min="1" max="10">
                             </div>
                         </div>
                     </div>
