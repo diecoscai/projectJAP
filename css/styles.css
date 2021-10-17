@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
 * {
   margin: 0;
-  font-weight: bold
+  font-weight: bold;
+  font-family: 'Titillium Web', sans-serif
 }
 *,
 ::before,
@@ -250,6 +251,7 @@ body {
   background: rgba(255, 255, 255, 0.5);
   
 }
+
 
 /* .btnComprar {
   display: flex;
@@ -606,3 +608,42 @@ a.custom-card:hover {
 .checked {
   color: orange;
 }
+
+span {cursor:pointer; }
+.number{
+  margin:100px;
+}
+.minus, .plus{
+  width:20px;
+  height:20px;
+  background:#f2f2f2;
+  border-radius:4px;
+  padding:8px 5px 8px 5px;
+  border:1px solid #ddd;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+input{
+  height:34px;
+  width: 100px;
+  text-align: center;
+  font-size: 26px;
+  border:1px solid #ddd;
+  border-radius:4px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.center{
+  width: 150px;
+  margin: 40px auto
+    
+  }
+
+  .boxbox{
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    }

@@ -132,8 +132,10 @@ document.addEventListener("DOMContentLoaded", function (e) {
                 cont += 
                 `       
                         <div class= "col col-md-4">
-                            <span>${item.name}</span>
-                            <img href="" class="img-thumbnail" src="${item.imgSrc}">
+                            <a type="button" href="product-info.html?id=${item.id}" class="">
+                                <span>${item.name}</span>
+                                <img href="" class="img-thumbnail" src="${item.imgSrc}">
+                            </a>
                         </div>
                         `;
             }
