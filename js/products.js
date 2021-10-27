@@ -90,9 +90,15 @@ function showProductData(array) {
                     <h6 class="card-subtitle">( ${product.soldCount} vendidos )</h6>
                     <div class="card-body">
                       <p class="card-text">${product.description}</p>
-                      <p class="card-cost">${product.currency} ${product.cost}</p>
-                      <a type="button" href="product-info.html?id=${product.id}" class="btn btn-primary btnComprar btnDetalle">Detalle</a>
                     </div>
+                </div>
+                <div class=" d-flex flex-row justify-content-center">
+                  <div class="col">
+                    <p class="card-cost">${product.currency} ${product.cost}</p>
+                  </div>
+                  <div class="col">
+                    <a type="button" href="product-info.html?id=${product.id}" class="btn btn-primary btnComprar btnDetalle">Detalle</a>
+                  </div>
                 </div>
             </div>
             `;

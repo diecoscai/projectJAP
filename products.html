@@ -3,21 +3,32 @@
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
     <meta name="description" content="" />
     <title>eMercado - Todo lo que busques está aquí</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/" />
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/4.3/examples/album/"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link href="css/font-awesome.min.css" rel="stylesheet" />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
   </head>
 
   <body id="body-pd" class="body-content">
-    <!-- HEADER -->
     <header class="header" id="header">
       <div class="col">
         <div class="header_toggle">
@@ -27,103 +38,128 @@
       <div class="col-md-10"></div>
       <div class="col-md-2">
         <div class="dropdown">
-          <button class="btn btn-primary btnDetalle dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button
+            class="btn btn-primary btnDetalle dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
             <span class="userName" id="userName"></span>
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item" href="my-profile.html">Mi Perfil</a>
             <a class="dropdown-item" href="cart.html">Ver Carrito</a>
-            <a class="dropdown-item" href="#" id="btnLogOut" onclick="clearData();"><i class="bx bx-log-out nav_icon"></i> SignOut</a>
+            <a
+              class="dropdown-item"
+              href="#"
+              id="btnLogOut"
+              onclick="clearData();"
+              ><i class="bx bx-log-out nav_icon"></i> SignOut</a
+            >
           </div>
         </div>
       </div>
       <!-- <div class="header_img"> <img src="https://imgur.com/krokYmO.jpg" alt=""> </div> -->
     </header>
 
-    <!-- SIDE_BAR -->
-    <div class="l-navbar" id="nav-bar">
-      <nav class="nav">
-        <div class="nav_list">
-          <div id="toggleId">
-            <a href="">
-              <img class="avatar" src="https://imgur.com/krokYmO.jpg" />  
-            </a>
-            <a href="home.html" class="nav_logo">
-              <i class="bx bx-layer nav_logo-icon"></i>
-              <span class="nav_logo-name">Inicio</span>
-            </a>
-            <a href="categories.html" class="nav_link active">
-              <i class="bx bx-grid-alt nav_icon"></i>
-              <span class="nav_name">Categorías</span>
-            </a>
-            <a href="products.html" class="nav_link">
-              <i class="bx bx-barcode nav_icon"></i>
-              <span class="nav_name">Productos</span>
-            </a>
-            <a href="sell.html" class="nav_link">
-              <i class="bx bx-dollar-circle nav_icon"></i>
-              <span class="nav_name">Vender</span>
-            </a>
-          </div>
+    <div class="row">
+      <!-- SIDE_BAR -->
+      <div class="col-md-1">
+        <div class="l-navbar" id="nav-bar">
+          <nav class="nav">
+            <div class="nav_list">
+              <div id="toggleId">
+                <img class="avatar" src="https://imgur.com/krokYmO.jpg" />
+                <a href="home.html" class="nav_logo">
+                  <i class="bx bx-layer nav_logo-icon"></i>
+                  <span class="nav_logo-name">Inicio</span>
+                </a>
+                <a href="categories.html" class="nav_link active">
+                  <i class="bx bx-grid-alt nav_icon"></i>
+                  <span class="nav_name">Categorías</span>
+                </a>
+                <a href="products.html" class="nav_link">
+                  <i class="bx bx-barcode nav_icon"></i>
+                  <span class="nav_name">Productos</span>
+                </a>
+                <a href="sell.html" class="nav_link">
+                  <i class="bx bx-dollar-circle nav_icon"></i>
+                  <span class="nav_name">Vender</span>
+                </a>
+              </div>
+            </div>
+          </nav>
         </div>
-      </nav>
-    </div>
+      </div>
 
-    <!-- CONTENIDO -->
-    <div class="contenido col-md-10 " >
-      <div class="justify-content-end">
-        <div class="col-md-12 col-sm-12 mb-1">
-          <div class="row p-0 m-0 col-md-12">
+
+      <div class="col-md-11 col-sm-12 pt-5">
+        <div class="container-fluid ">
+          <div class="row">
             <!-- SEARCH -->
-            <div class="col-md-3">
-              <input type="text"class="form-control input-group" id="search" placeholder="Search"/>
+            <div class="col-md-3 col-sm-12">
+              <input
+                type="text"
+                class="form-control input-group"
+                id="search"
+                placeholder="Search"
+              />
             </div>
 
             <!-- FILTER COST -->
-            <div class="col">
-              <p class="font-weight-normal text-right my-2">Cost.</p>
-            </div>
-            <div class="col">
-              <input class="form-control" type="number" placeholder="min." id="costMin"/>
-            </div>
-            <div class="col">
-              <input class="form-control" type="number" placeholder="max." id="costMax"/>
-            </div>
-            <div class="col">
-              <div class="btn-group" role="group">
-                <button class="btn btn-light" id="btnFilterCost">
-                  Filter
-                </button>
-                <button class="btn btn-light" id="btnClearFilter">
-                  Clean
-                </button>
+            <div class="col-md-5 col-sm-12">
+              <div class="row">
+                <div class="col">
+                  <p class="font-weight-normal text-right my-2">Cost.</p>
+                </div>
+                <div class="col">
+                  <input
+                    class="form-control"
+                    type="number"
+                    placeholder="min."
+                    id="costMin"
+                  />
+                </div>
+                <div class="col">
+                  <input
+                    class="form-control"
+                    type="number"
+                    placeholder="max."
+                    id="costMax"
+                  />
+                </div>
+                <div class="col">
+                  <div class="btn-group" role="group">
+                    <button class="btn btn-light" id="btnFilterCost">Filter</button>
+                    <button class="btn btn-light" id="btnClearFilter">Clean</button>
+                  </div>
+                </div>
               </div>
             </div>
-
+            
             <!-- ORDER COST && VALOR -->
-            <div class="col">
-              <p class="font-weight-normal text-right my-2">Order By</p>
-            </div>
-            <div class="col-md-3">
-              <div class="btn-group btn-group-toggle mb-4" data-toggle="buttons">
-                <label class="btn btn-light active" id="sortAsc" >
-                    <input type="radio" name="options" autocomplete="off" checked><i class="fas fa-sort-amount-up mr-1"></i> Costo
-                </label>
-                <label class="btn btn-light" id="sortDesc" >
-                    <input type="radio" name="options" autocomplete="off"><i class="fas fa-sort-amount-down mr-1"></i> Costo
-                </label>
-                <label class="btn btn-light" id="sortByCount" >
-                    <input type="radio" name="options" autocomplete="off"><i class="fas fa-sort-amount-down mr-1"></i>Valor
-                </label>
-            </div>
-            </div>
+            <div class="col-md-4 col-sm-12 pl-5">
+              <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Sort By
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#" id="sortAsc">Price: Low to High</a>
+                  <a class="dropdown-item" href="#" id="sortDesc">Price: High to Low</a>
+                  <a class="dropdown-item" href="#" id="sortByCount">Featured</a>
+                </div>
+              </div>
+            </div>   
+          </div>
+          <div class="d-flex flex-row justify-content-center">
+            <div class="grid-container" id="data"></div>
           </div>
         </div>
       </div>
     </div>
-    <div class="d-flex flex-row justify-content-center alig-items-center">
-      <div class="grid-container " id="data"></div>
-    </div>
+
 
     <div id="spinner-wrapper">
       <div class="lds-ring"></div>
