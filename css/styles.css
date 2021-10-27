@@ -275,6 +275,13 @@ body {
 
 /*#endregion cartas*/
 
+.contenedor{
+  min-height: 500px;
+}
+.profileForm{
+  display: flex;
+  align-items: center;
+}
 .filtros {
   display: block;
   width: 100%;
@@ -640,14 +647,32 @@ input{
     
   }
 
-  .boxbox{
-    background-color: #fff;
-    background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius: .25rem;
-    }
+.boxbox{
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  }
 
-    .btnCurrency{
-      height: 20px;
-      width: 40px;
-    }
+  .btnCurrency{
+    height: 20px;
+    width: 40px;
+  }
+
+.profileLabel{
+  
+}
+
+.profileAvatarArea{
+  background: rgb(231, 231, 231);
+  display: flex;
+  justify-content: center;
+}
+
+.profileAvatar{
+  vertical-align: middle;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+
+}
