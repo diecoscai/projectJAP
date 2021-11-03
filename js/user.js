@@ -1,11 +1,10 @@
 document.addEventListener("DOMContentLoaded", function(e){
-    let userLogged = localStorage.getItem('user-logged');
+    let userInfo = localStorage.getItem('userInfo');
     let user = document.getElementById("userName");
-    let loginNeed = localStorage.getItem('login-need');
 
-    if(userLogged){
-        userLogged = JSON.parse(userLogged);
-        user.innerHTML = userLogged.user;
+    if(userInfo){
+        userInfo = JSON.parse(userInfo);
+        user.innerHTML = userInfo.email;
     }
     
     // if(loginNeed){
@@ -32,18 +31,16 @@ function saveData(emailAddress, password){
         let inputEmail = document.getElementById('emailAddress');
         let inputPass = document.getElementById('password');
 
-        localStorage.setItem('user-logged',JSON.stringify({'user': inputEmail.value, 'pass': inputPass.value}));
-        sessionStorage.setItem("user", emailAddress.trim());
+        localStorage.setItem('userInfo',JSON.stringify({'email': inputEmail.value, 'pass': inputPass.value}));
+        sessionStorage.setItem("email", emailAddress.trim());
         location.href="./home.html";
-        alert (" Usuario : " + emailAddress + " Password : " + password ); 
-
     }
 
 };
 
 
 function clearData(){
-        localStorage.removeItem("user-logged");
+        localStorage.removeItem("userInfo");
         location.href = "./login.html";
 };
 

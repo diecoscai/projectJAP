@@ -20,27 +20,43 @@
   </head>
 
   <body id="body-pd" class="body-content ">
+    <!-- HEADER -->
     <header class="header" id="header">
       <div class="col">
         <div class="header_toggle">
           <i class="bx bx-menu" id="header-toggle"></i>
         </div>
       </div>
-      <div class="col-md-10"></div>
+      <div class="col-md-9"></div>
       <div class="col-md-2">
         <div class="dropdown">
-          <button class="btn btn-primary btnDetalle dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button
+            class="btn btn-primary btnDetalle dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
             <span class="userName" id="userName"></span>
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="my-profile.html">Mi Perfil</a>
-            <a class="dropdown-item" href="cart.html">Ver Carrito</a>
-            <a class="dropdown-item" href="#" id="btnLogOut" onclick="clearData();"><i class="bx bx-log-out nav_icon"></i> SignOut</a>
+            <a class="dropdown-item" href="my-profile.html">My Profile</a>
+            <a class="dropdown-item" href="cart.html">Cart</a>
+            <a
+              class="dropdown-item"
+              href="#"
+              id="btnLogOut"
+              onclick="clearData();"
+              ><i class="bx bx-log-out nav_icon"></i> SignOut</a
+            >
           </div>
         </div>
       </div>
+      <div class="col-md-1"></div>
       <!-- <div class="header_img"> <img src="https://imgur.com/krokYmO.jpg" alt=""> </div> -->
     </header>
+
     
     <div class="row">
       <!-- SIDE_BAR -->
@@ -54,7 +70,7 @@
                   <i class="bx bx-layer nav_logo-icon"></i>
                   <span class="nav_logo-name">Inicio</span>
                 </a>
-                <a href="categories.html" class="nav_link active">
+                <a href="categories.html" class="nav_link">
                   <i class="bx bx-grid-alt nav_icon"></i>
                   <span class="nav_name">Categorías</span>
                 </a>

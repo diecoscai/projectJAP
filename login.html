@@ -18,7 +18,6 @@
 <body class="text-center" id="loginBody">
 
   <div class="row">
-
     <div class="page-login text-center  w-xl w-360 p-15">
       <img class="mb-0 w-100" src="img/logo.png" alt="" >
       <h3>Log In</h3>
@@ -32,10 +31,14 @@
         </div>
         
         <div class="form-group mt-20">
-          <button id="btnLogin" onclick="saveData(emailAddress.value, password.value);" class="btnGeneral btnLogin btn btn-m" type="button">Login</button>
-          <label>
-            <input type="checkbox" id="rememberMe"><i></i> Remember me
-          </label>
+          <div class="col-md-12">
+            <button id="btnLogin" onclick="saveData(emailAddress.value, password.value);" class="btn btn-primary w-100" type="button">Login</button>
+          </div>
+          <div class="col-md-12">
+            <label>
+              <input type="checkbox" id="rememberMe"><i></i> Remember me
+            </label>
+          </div>  
         </div>
       </form>
     </div>

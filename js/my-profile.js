@@ -14,12 +14,42 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
 
     }
-    document.getElementById("name").value = user.name;
-    document.getElementById("lastName").value = user.lastname;
-    document.getElementById("age").value = user.age;
-    document.getElementById("address").value = user.address;
-    document.getElementById("email").value = user.email;
-    document.getElementById("phone").value = user.phone;
+    if(!user.name){
+      document.getElementById("name").value = '';
+    }else{  
+      document.getElementById("name").value = user.name;
+    }
+
+    if(!user.lastname){
+      document.getElementById("lastName").value = '';
+    }else{
+      document.getElementById("lastName").value = user.lastname;
+    }
+
+    if(!user.age){
+      document.getElementById("age").value = '';
+    }else{
+      document.getElementById("age").value = user.age;
+    }
+
+    if(!user.address){
+      document.getElementById("address").value = '';
+    }else{
+      document.getElementById("address").value = user.address;
+    }
+
+    if(!user.email){
+      document.getElementById("email").value = '';
+    }else{
+      document.getElementById("email").value = user.email;
+    }
+
+    if(!user.phone){
+      document.getElementById("phone").value = '';
+    }else{
+      document.getElementById("phone").value = user.phone;
+    }
+
   }
 });
 
