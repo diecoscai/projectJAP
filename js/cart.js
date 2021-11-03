@@ -2,6 +2,20 @@
 //que el documento se encuentra cargado, es decir, se encuentran todos los
 //elementos HTML presentes.
 document.addEventListener("DOMContentLoaded", function(e){
+    
+    // Check Log In
+    // let userLogged = localStorage.getItem('user-logged');
+    
+    // if(!userLogged){
+    //     localStorage.setItem('login-need', JSON.stringify({
+    //         from: "cart.html",
+    //         msg: "You must sign in before buying"
+
+    //     }));
+    //     window.location = "login.html";
+    // }
+
+
     getJSONData(CART_INFO_URL).then((resultado) => {
         if (resultado.status == "ok") {
             arrayProducts = resultado.data.articles;

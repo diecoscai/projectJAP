@@ -1,11 +1,22 @@
 document.addEventListener("DOMContentLoaded", function(e){
     let userLogged = localStorage.getItem('user-logged');
     let user = document.getElementById("userName");
-  
+    let loginNeed = localStorage.getItem('login-need');
+
     if(userLogged){
-      userLogged = JSON.parse(userLogged);
-      user.innerHTML = userLogged.user;
+        userLogged = JSON.parse(userLogged);
+        user.innerHTML = userLogged.user;
     }
+    
+    // if(loginNeed){
+    //     loginNeed = JSON.parse(loginNeed);
+    //     document.getElementById("alert").innerHTML = `
+    //         <div class="alert alert-danger alert-dismissible w-50" id="mensaje" role="alert">
+    //             <span id="msg">${loginNeed.msg}</span>
+    //             <a href="#" class = "close" data-dismiss="alert">&times;</a>
+    //         </div>
+    //     `;
+    // }
 });
 
 function saveData(emailAddress, password){
