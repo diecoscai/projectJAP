@@ -1,194 +1,246 @@
 <!DOCTYPE html>
 <!-- saved from url=(0049)https://getbootstrap.com/docs/4.3/examples/album/ -->
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <title>eMercado - Todo lo que busques está aquí</title>
-  
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link ref="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet" />
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/" />
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="css/font-awesome.min.css" rel="stylesheet" />
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/styles.css" rel="stylesheet" />
-  </head>
 
-  <body id="body-pd" class="body-content ">
-    <header class="header" id="header">
-      <div class="col">
-        <div class="header_toggle">
-          <i class="bx bx-menu" id="header-toggle"></i>
-        </div>
-      </div>
-      <div class="col-md-10"></div>
-      <div class="col-md-2">
-        <div class="dropdown">
-          <button class="btn btn-primary btnDetalle dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span class="userName" id="userName"></span>
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="my-profile.html">Mi Perfil</a>
-            <a class="dropdown-item" href="cart.html">Ver Carrito</a>
-            <a class="dropdown-item" href="#" id="btnLogOut" onclick="clearData();"><i class="bx bx-log-out nav_icon"></i> SignOut</a>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <title>eMercado - Todo lo que busques está aquí</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link ref="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet" />
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="body-pd" class="body-content">
+  <!-- MODAL FORMA DE PAGO -->
+  <div class="modalConteiner w-100">
+    <div class="modal fade w-100" id="modalFormaDePago" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Forma de Pago</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-        </div>
-      </div>
-      <!-- <div class="header_img"> <img src="https://imgur.com/krokYmO.jpg" alt=""> </div> -->
-    </header>
-    
-    <div class="row">
-      <!-- SIDE_BAR -->
-      <div class="col-md-1">
-        <div class="l-navbar" id="nav-bar">
-          <nav class="nav">
-            <div class="nav_list">
-              <div id="toggleId">
-                <img class="avatar" src="https://imgur.com/krokYmO.jpg" />
-                <a href="home.html" class="nav_logo">
-                  <i class="bx bx-layer nav_logo-icon"></i>
-                  <span class="nav_logo-name">Inicio</span>
-                </a>
-                <a href="categories.html" class="nav_link active">
-                  <i class="bx bx-grid-alt nav_icon"></i>
-                  <span class="nav_name">Categorías</span>
-                </a>
-                <a href="products.html" class="nav_link">
-                  <i class="bx bx-barcode nav_icon"></i>
-                  <span class="nav_name">Productos</span>
-                </a>
-                <a href="sell.html" class="nav_link">
-                  <i class="bx bx-dollar-circle nav_icon"></i>
-                  <span class="nav_name">Vender</span>
-                </a>
+          <div class="modal-body">
+            <select id="selectFormaDePago" name="form_select">
+                <option value="0">Efectivo</option>
+                <option value="1">Credito</option>
+              </select>
+              <div class="breakLine"></div>
+              <div class="row" id="divEfectivo">
+                <div class="col-md-12"><label>Monto a pagar</label></div>
+                <div class="col-md-12">
+                  <input class="inputCard" type="number" class="" />
+                </div>
               </div>
-            </div>
-          </nav>
-        </div>
-      </div>
-      
-      <div class="col-md-11 col-sm-12 pt-5">
-        <div class="container-fluid">
-          <div class="row">
-            <!-- Listado de Productos -->
-            <div class="col-md-8 col-sm-12" id="prodData"></div>
-            <!-- Costos -->
-            <div class="col-md-3 col-sm-12 boxbox">
-              <div class="row">
-                <div class="col-sm-12 ">
-                  <span class="h3 d-flex justify-content-center ">Confirmacion de Pedido</span>
-                </div>
-                <div class="col-sm-12">
-                  <div class="breakLine"></div>
-                </div>
-                <div class="col-sm-12" id="confirm"></div>
-                <div class="col-sm-12">
-                  <div class="breakLine"></div>
-                </div>
-                <div class="col-sm-12">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <form>
-                        <div class="form-group">
-                          <label for="">Dirección</label>
-                          <input type="text" class="form-control" id="" placeholder="Calle Falsa 123">
-                        </div>
-                        <div class="form-group">
-                          <label for="">Teléfono</label>
-                          <input type="text" class="form-control" id="" placeholder="099 123 123">
-                        </div>
-                      </form>
-                    </div>
-                    <div class="col-sm-12">
-                      <div class="form-group">
-                        <label for="exampleFormControlSelect1">Tipo de Envio</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                          <option>Standard</option>
-                          <option>Express</option>
-                          <option>Premium</option>
-                        </select>
-                      </div>
-                      <!-- <div class="dropdown">
-                        <button class="btn btn-primary btnDetalle dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="" id="">Tipo de Envio</span>
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="">Premium</a>
-                          <a class="dropdown-item" href="">Express</a>
-                          <a class="dropdown-item" href="" id="">Standard</a>
-                        </div> -->
-                    </div>
-                    <div class="col-md-12">
-                      <div class="breakLine"></div>
-                    </div>
-                    <div class="col-md-12">
-                      <span>Currency: </span>
-                    </div>
-                    <div class="col-md-12 col-sm-12">
-                      <div class="form-check form-check-inline">
-                        <input
-                          class="form-check-input btnCurrency"
-                          type="radio"
-                          name="inlineRadioOptions"
-                          id="inlineRadio1"
-                          value="pesos"
-                        checked/>
-                        <label class="form-check-label" for="inlineRadio1">$</label>
-                      </div>
-                      
-                      <div class="form-check form-check-inline">
-                        <input
-                          class="form-check-input btnCurrency"
-                          type="radio"
-                          name="inlineRadioOptions"
-                          id="inlineRadio2"
-                          value="dolares"
-                        />
-                        <label class="form-check-label" for="inlineRadio2">US$</label>
-                      </div>
-                    </div>
-                    <div class="col-sm-12">
-                      <span>Subtotal: </span><span class="float-right" id="total"></span>
-                    </div>
-                    <div class="col-sm-12">
-                      <span>Costo de Envio: </span><span class="float-right" id="costEnvio">1234</span>
-                    </div>
-                    <div class="col-sm-12">
-                      <span class="h3">Total: </span><span class="h3 float-right">$20</span>
-                    </div>
-                    <div class="col-md-12">
-                      <div class="breakLine"></div>
-                    </div>
-                  
-                    
-                    <div class="col-md-12">
-                      <a type="button" href="" class="btn btn-primary btnComprar btnDetalle">Pagar</a>
-                    </div>
-
+              <div class="hidden_div" id="divCredito">
+                <div class="form-container">
+                  <div class="field-container">
+                    <label for="name">Name</label>
+                    <input class="inputCard" id="name" maxlength="20" type="text" />
+                  </div>
+                  <div class="field-container">
+                    <label for="cardnumber">Card Number</label>
+                    <input class="inputCard" id="cardnumber" type="text" pattern="[0-9]*" inputmode="numeric" />
+                  </div>
+                  <div class="field-container">
+                    <label for="expirationdate">Expiration (mm/yy)</label>
+                    <input class="inputCard" id="expirationdate" type="text" pattern="[0-9]*" inputmode="numeric" />
+                  </div>
+                  <div class="field-container">
+                    <label for="securitycode">Security Code</label>
+                    <input class="inputCard" id="securitycode" type="text" pattern="[0-9]*" inputmode="numeric" />
                   </div>
                 </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="col">
+      <div class="header_toggle">
+        <i class="bx bx-menu" id="header-toggle"></i>
+      </div>
+    </div>
+    <div class="col-md-10"></div>
+    <div class="col-md-2">
+      <div class="dropdown">
+        <button class="btn btn-primary btnDetalle dropdown-toggle" type="button" id="dropdownMenuButton"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="userName" id="userName"></span>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="my-profile.html">Mi Perfil</a>
+          <a class="dropdown-item" href="cart.html">Ver Carrito</a>
+          <a class="dropdown-item" href="#" id="btnLogOut" onclick="clearData();"><i class="bx bx-log-out nav_icon"></i>
+            SignOut</a>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="header_img"> <img src="https://imgur.com/krokYmO.jpg" alt=""> </div> -->
+  </header>
+
+  <div class="row">
+    <!-- SIDE_BAR -->
+    <div class="col-md-1">
+      <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+          <div class="nav_list">
+            <div id="toggleId">
+              <img class="avatar" src="https://imgur.com/krokYmO.jpg" />
+              <a href="home.html" class="nav_logo">
+                <i class="bx bx-layer nav_logo-icon"></i>
+                <span class="nav_logo-name">Inicio</span>
+              </a>
+              <a href="categories.html" class="nav_link active">
+                <i class="bx bx-grid-alt nav_icon"></i>
+                <span class="nav_name">Categorías</span>
+              </a>
+              <a href="products.html" class="nav_link">
+                <i class="bx bx-barcode nav_icon"></i>
+                <span class="nav_name">Productos</span>
+              </a>
+              <a href="sell.html" class="nav_link">
+                <i class="bx bx-dollar-circle nav_icon"></i>
+                <span class="nav_name">Vender</span>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div class="col-md-11 col-sm-12 pt-5">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- Listado de Productos -->
+          <div class="col-md-8 col-sm-12" id="prodData"></div>
+          <!-- Costos -->
+          <div class="col-md-3 col-sm-12 boxbox">
+            <div class="row">
+              <div class="col-sm-12">
+                <span class="h3 d-flex justify-content-center">Confirmacion de Pedido</span>
+              </div>
+              <div class="col-sm-12">
+                <div class="breakLine"></div>
+              </div>
+              <div class="col-sm-12" id="confirm"></div>
+              <div class="col-sm-12">
+                <div class="breakLine"></div>
+              </div>
+              <div class="col-sm-12">
+                <div class="row">
+                  <div class="col-md-12">
+                    <form>
+                      <div class="form-group">
+                        <label for="">Dirección</label>
+                        <input type="text" id="inputDir" class="form-control" id="inputDir"
+                          placeholder="Calle Falsa 123" />
+                      </div>
+                      <div class="form-group">
+                        <label for="">Teléfono</label>
+                        <input type="text" id="inputTel" class="form-control" id="inputTel" placeholder="099 123 123" />
+                      </div>
+                    </form>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <label for="exampleFormControlSelect1">Tipo de Envio</label>
+                      <select class="form-control" id="tipoEnv">
+                        <option value="1" selected>
+                          Standard 12-15 días (5%)
+                        </option>
+                        <option value="2">Express 5-8 días (7%)</option>
+                        <option value="3">Premium 2-5 días (15%)</option>
+                      </select>
+                      <span class="help-block">Por defecto la opción es standard</span>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="breakLine"></div>
+                  </div>
+                  <div class="col-md-12">
+                    <span>Currency: </span>
+                  </div>
+                  <div class="col-md-12 col-sm-12">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input btnCurrency" type="radio" name="inlineRadioOptions"
+                        id="inlineRadio1" value="pesos" checked />
+                      <label class="form-check-label" for="inlineRadio1">$</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input btnCurrency" type="radio" name="inlineRadioOptions"
+                        id="inlineRadio2" value="dolares" />
+                      <label class="form-check-label" for="inlineRadio2">US$</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <span>Subtotal: </span><span class="float-right" id="subTotal"></span>
+                  </div>
+                  <div class="col-sm-12">
+                    <span>Costo de Envio: </span><span class="float-right" id="costEnvio"></span>
+                  </div>
+                  <div class="col-sm-12">
+                    <span class="h3">Total: </span><span id="total" class="h3 float-right"></span>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="breakLine"></div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <i class="fa fa-cc-paypal" style="font-size: 36px"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <button type="button" class="btn btn-primary btnComprar btnDetalle" data-toggle="modal" data-target="#modalFormaDePago">
+                      Forma de Pago
+                    </button>
+                  </div>
+
+                  <div class="col-md-12">
+                    <a type="button" class="btn btn-primary btnComprar btnDetalle" id="pagar">Pagar</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div id="spinner-wrapper">
-      <div class="lds-ring"></div>
-    </div>
+  <div id="spinner-wrapper">
+    <div class="lds-ring"></div>
+  </div>
 
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/init.js"></script>
-    <script src="js/structure.js"></script>
-    <script src="js/user.js"></script>
-    <script src="js/cart.js"></script>
-  </body>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/structure.js"></script>
+  <script src="js/user.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+
 </html>

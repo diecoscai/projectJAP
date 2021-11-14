@@ -1,7 +1,23 @@
-//Función que se ejecuta una vez que se haya lanzado el evento de
-//que el documento se encuentra cargado, es decir, se encuentran todos los
-//elementos HTML presentes.
+var subTotalUni;
+var subTotal;
+var total;
+var costoEnvio;
+
 document.addEventListener("DOMContentLoaded", function(e){
+    
+    // Check Log In
+    // let userLogged = localStorage.getItem('user-logged');
+    
+    // if(!userLogged){
+    //     localStorage.setItem('login-need', JSON.stringify({
+    //         from: "cart.html",
+    //         msg: "You must sign in before buying"
+
+    //     }));
+    //     window.location = "login.html";
+    // }
+
+
     getJSONData(CART_INFO_URL).then((resultado) => {
         if (resultado.status == "ok") {
             arrayProducts = resultado.data.articles;
@@ -9,6 +25,9 @@ document.addEventListener("DOMContentLoaded", function(e){
         } else {
             alert(resultado.data);
         }
+
+
+
     });
 
     function showProductData(array){
@@ -33,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function(e){
                         <div class="col-sm-4">
                         <div class="row">
                             <div class="col-sm-12 mx-auto">
-                                <input type="number" id="cant${i}" class="form-control input-number" onchange="subCost(${item.unitCost}, ${i})" value="${item.count}" min="1" max="10">
+                                <input type="number" id="cant${i}" class="form-control input-number" onchange="calcSubCostUni(${item.unitCost}, ${i})" value="${item.count}" min="1" max="10">
                             </div>
                         </div>
                     </div>
@@ -59,6 +78,9 @@ document.addEventListener("DOMContentLoaded", function(e){
             document.getElementById("confirm").innerHTML += conf;
             i++;
         }
+
+        calcSubTotal();
+        calcularEnvio();
         calcTotal();
     }
 
@@ -69,20 +91,119 @@ document.addEventListener("DOMContentLoaded", function(e){
     
 });
 
-function subCost(cost, i){
+//FORMA DE PAGO
+function showDiv(){
+    let select = document.getElementById("selectFormaDePago");
+    let option = select.options[select.selectedIndex].value;
+    if(option == 0){
+        console.log("entra", option);
+        document.getElementById("divEfectivo").style.display = 'block';
+        document.getElementById("divCredito").style.display = 'none';
+
+        
+    } else if(option == 1){
+        console.log("entra", option);
+
+        document.getElementById("divCredito").style.display = 'block';
+        document.getElementById("divEfectivo").style.display = 'none';
+
+
+    }
+
+}
+
+function validar(){
+    let dir = document.getElementById("inputDir");
+    let tel = document.getElementById("inputTel");
+    let formComplete = true;
+
+    if (dir.value == ""){
+        dir.classList.add("invalid");
+        formComplete = false;
+    }else if(tel.value == ""){
+        tel.classList.add("invalid");
+        formComplete = false;    
+    }
+
+    if(formComplete){
+        localStorage.setItem('orderInfo', JSON.stringify({
+            dir: inputDir.value,
+            tel:  inputTel.value,
+
+        }));
+        alert("Orden Creada! :)");
+    }
+}
+
+// CALCULAR SUB-TOTAL UNITARIO
+function calcSubCostUni(cost, i){
     let cant = parseInt(document.getElementById(`cant${i}`).value);
     document.getElementById(`count${i}`).innerHTML = cant;
-    subTotal = cost * cant;
-    document.getElementById(`sub${i}`).innerHTML = subTotal;
+    subTotalUni = cost * cant;
+    document.getElementById(`sub${i}`).innerHTML = subTotalUni;
+    calcSubTotal();
+    calcularEnvio();
     calcTotal();
 }
 
-function calcTotal(){
-    let total = 0;
+// CALCULAR SUB-TOTAL
+function calcSubTotal(){
+    subTotal= 0;
     let subs = document.getElementsByClassName("sub");
         for(item of subs){
-            total += parseInt(item.innerHTML);
+            subTotal += parseInt(item.innerHTML);
         }
-        document.getElementById("total").innerHTML = total;
-        console.log("hola");
+        console.log(subTotal);
+        document.getElementById("subTotal").innerHTML = subTotal;
+        
 }
+
+// CALCULAR ENVIO
+function calcularEnvio() {
+    costoEnvio = 0;
+    let select = document.getElementById("tipoEnv");
+    let option = select.options[select.selectedIndex].value;
+
+    if(option == '1'){
+        costoEnvio = Math.round(subTotal * 0.05);
+        console.log(costoEnvio);
+        document.getElementById("costEnvio").innerHTML = costoEnvio;
+
+    }else if(option == '2'){
+        costoEnvio = Math.round(subTotal * 0.07);
+        console.log(costoEnvio);
+        document.getElementById("costEnvio").innerHTML = costoEnvio;
+    }else if(option == '3'){
+        costoEnvio = Math.round(subTotal * 0.15);
+        console.log(costoEnvio);
+        document.getElementById("costEnvio").innerHTML = costoEnvio;
+    }
+    calcTotal();
+}
+
+
+// CALCULAR TOTAL
+function calcTotal(){
+    total = 0;
+
+    total = subTotal + costoEnvio;
+    document.getElementById("total").innerHTML = total;
+    
+}
+
+
+
+
+
+
+document.getElementById("tipoEnv").addEventListener("change", function(){
+    calcularEnvio();
+});
+
+document.getElementById("selectFormaDePago").addEventListener("change", function(){
+    showDiv();
+});
+
+document.getElementById("pagar").addEventListener("click", function () {
+    validar();
+});

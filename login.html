@@ -17,27 +17,30 @@
 
 <body class="text-center" id="loginBody">
 
-  <div class="page-login text-center  w-xl w-360 p-15">
-    <img class="mb-0 w-100" src="img/logo.png" alt="" >
-    <h3>Log In</h3>
-    <form name="form" class="form-login container">
-      <div class="form-group">
-        <input type="mail" id="emailAddress" name="emailAddress" class="form-control"  placeholder="Enter Email">  
-      </div>
-      
-      <div class="form-group">
-        <input type="password" id="password" name="password" class="form-control" placeholder="Password" >
-      </div>
-      
-      <div class="form-group mt-20">
-        <button id="btnLogin" onclick="saveData(emailAddress.value, password.value);" class="btnGeneral btnLogin btn btn-m" type="button">Login</button>
-        <label>
-          <input type="checkbox" id="rememberMe"><i></i> Remember me
-        </label>
-      </div>
-      
-    </form>
-    
+  <div class="row">
+
+    <div class="page-login text-center  w-xl w-360 p-15">
+      <img class="mb-0 w-100" src="img/logo.png" alt="" >
+      <h3>Log In</h3>
+      <form name="form" class="form-login container">
+        <div class="form-group">
+          <input type="mail" id="emailAddress" name="emailAddress" class="form-control"  placeholder="Enter Email">  
+        </div>
+        
+        <div class="form-group">
+          <input type="password" id="password" name="password" class="form-control" placeholder="Password" >
+        </div>
+        
+        <div class="form-group mt-20">
+          <button id="btnLogin" onclick="saveData(emailAddress.value, password.value);" class="btnGeneral btnLogin btn btn-m" type="button">Login</button>
+          <label>
+            <input type="checkbox" id="rememberMe"><i></i> Remember me
+          </label>
+        </div>
+      </form>
+    </div>
+    <div class="row" id="alert"></div>
+
   </div>
 
   <script src="js/init.js"></script>

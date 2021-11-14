@@ -34,7 +34,22 @@ body {
   padding-top: 30px
 }
 
+.required{
+  font-size: 16px !important;
+  color: #e05d6f
+}
 
+.invalid{
+  border-color: #dc3545
+}
+
+.help-block {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #737373;
+  font-size: small;
+}
 
 /*#region header-sidebar*/
 
@@ -294,6 +309,19 @@ body {
   text-decoration: none;
 }
 
+.hidden_div {
+  display: none;
+}
+
+.inputCard {
+  margin-top: 3px;
+  padding: 15px;
+  font-size: 16px;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #dcdcdc;
+}
+
 
 
 /*#region Buttons*/
@@ -474,6 +502,16 @@ body {
 
 /*#endregion Detail*/
 
+#modalFormaDePago{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  }
+
+.modal-backdrop{
+  width: 100%;
+}
 
 
 .jumbotron .display-4 {
